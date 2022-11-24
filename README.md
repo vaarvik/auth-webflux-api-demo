@@ -12,6 +12,7 @@ fetch("http://localhost:8080/user/me", {
 }).then(response => response.json())'
 ```
 ### Endpoints
+Be aware that cors don't allow that many headers and an illegal header will add a OPTIONS request. 
 #### Authorization
 - http://localhost:8080/auth/signup
 - http://localhost:8080/auth/login
